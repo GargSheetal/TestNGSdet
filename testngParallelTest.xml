@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- running test parallelly at the method level-->
+<suite name="Parallel Suite" parallel ="tests">
+  
+  <test thread-count="2" name="Parallel Test1">
+    <classes>
+      <class name="parallelTesting.ParallelTest1"/>
+    </classes>
+  </test> <!-- Parallel Test -->
+  
+  <test thread-count="2" name="Parallel Test2">
+    <classes>
+      <class name="parallelTesting.ParallelTest2"/>
+    </classes>
+  </test> <!-- Parallel Test -->
+  
+</suite> <!-- Parallel Suite -->
